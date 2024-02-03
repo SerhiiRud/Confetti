@@ -1,3 +1,8 @@
+import { Box } from '@chakra-ui/react';
 export const Hero = () => {
-  return <div>Hero</div>;
+  return (
+    <section id="hero">
+      <Box h={'600px'}>Hero</Box>
+    </section>
+  );
 };
