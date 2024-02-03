@@ -1,8 +1,8 @@
 import { extendTheme } from '@chakra-ui/react';
 
 const fonts = {
-  body: `'BodyFont', sans-serif`,
-  heading: `'HeadingFont', sans-serif`,
+  body: `'Anzeigen Grotesk T', sans-serif`,
+  heading: `'Anzeigen Grotesk T', sans-serif`,
 };
 
 const colors = {

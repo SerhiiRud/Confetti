@@ -3,7 +3,7 @@ import { BurgerMenu } from './BurgerMenu';
 
 export const Header = () => {
   return (
-    <Heading color={'test'} fontFamily={'heading'}>
+    <Heading>
       CONFETTI
       <BurgerMenu />
     </Heading>
