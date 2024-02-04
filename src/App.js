@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import {
   ChakraProvider,
   Box,
@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/react';
 import Fonts from './utils/fonts';
 import theme from './utils/theme';
+import './styles.css';
 import { Header } from './components/Header';
 import { BurgerMenu } from './components/BurgerMenu';
 import { Hero } from './components/Hero';
@@ -20,11 +21,33 @@ import { ContactUs } from './components/ContactUs';
 import { Footer } from './components/Footer';
 
 function App() {
+  const [position, setPosition] = useState(window.pageYOffset);
+  const [visible, setVisible] = useState(true);
+  useEffect(() => {
+    const handleScroll = () => {
+      let moving = window.pageYOffset;
+
+      setVisible(position > moving);
+      setPosition(moving);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  });
+
+  const cls = visible ? 'visible' : 'hidden';
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
-      <Container>
-        <Header>
+      <Container
+        maxW={[360, 768, 1280]}
+        py={'32px'}
+        px={'20px'}
+        border="1px"
+        borderColor="gray.200"
+      >
+        <Header className={cls}>
           <BurgerMenu />
         </Header>
         <Hero />

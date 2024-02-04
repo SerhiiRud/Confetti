@@ -1,15 +1,18 @@
-import { List } from '@chakra-ui/react';
+import { Box, Heading, List } from '@chakra-ui/react';
 import { MenuItem } from './MenuItem';
 
-export const BurgerMenu = () => {
+export const BurgerMenu = ({ onClose }) => {
   return (
-    <nav>
-      <List>
-        <MenuItem anchor="hero" content="GŁÓWNA" />
-        <MenuItem anchor="about" content="O NAS" />
-        <MenuItem anchor="reviews" content="RECENZJE" />
-        <MenuItem anchor="contactus" content="KONTAKTY" />
-      </List>
-    </nav>
+    <Box>
+      <Heading as="h2">CONFETTI</Heading>
+      <nav>
+        <List>
+          <MenuItem anchor="hero" content="GŁÓWNA" onClose={onClose} />
+          <MenuItem anchor="about" content="O NAS" onClose={onClose} />
+          <MenuItem anchor="reviews" content="RECENZJE" onClose={onClose} />
+          <MenuItem anchor="contactus" content="KONTAKTY" onClose={onClose} />
+        </List>
+      </nav>
+    </Box>
   );
 };

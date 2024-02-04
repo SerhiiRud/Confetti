@@ -1,7 +1,7 @@
 import { Link as ChakraLink, ListItem } from '@chakra-ui/react';
 import { Link as SmoothLink } from 'react-scroll';
 
-export const MenuItem = ({ anchor, content }) => {
+export const MenuItem = ({ anchor, content, onClose }) => {
   return (
     <ListItem>
       <ChakraLink
@@ -13,6 +13,7 @@ export const MenuItem = ({ anchor, content }) => {
         color={'red'}
         fontSize={24}
         fontWeight={500}
+        onClick={onClose}
       >
         {content}
       </ChakraLink>
