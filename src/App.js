@@ -26,7 +26,6 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       let moving = window.pageYOffset;
-
       setVisible(position > moving);
       setPosition(moving);
     };
@@ -47,7 +46,7 @@ function App() {
         border="1px"
         borderColor="gray.200"
       >
-        <Header className={cls}>
+        <Header className={cls} sx={{ className: { cls } }}>
           <BurgerMenu />
         </Header>
         <Hero />

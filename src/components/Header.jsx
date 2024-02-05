@@ -15,28 +15,49 @@ import {
 import { BurgerMenu } from './BurgerMenu';
 import icon from '../images/svg/symbol-defs.svg';
 
-export const Header = () => {
+export const Header = ({ className }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
       <Box
         as="header"
         pos={'fixed'}
+        my={'32px'}
         display={'flex'}
         gap={'160px'}
         alignItems={'center'}
+        className={className}
       >
-        <Heading color={'logoColor'}>CONFETTI</Heading>
-        <Box display={'flex'} gap={'8px'}>
-          <Text>MENU</Text>
-          <Button onClick={onOpen} size={'3xs'} bg={'transparent'}>
-            <svg width="24" height="24">
-              <use href={`${icon}#menu-icon`}></use>
-            </svg>
-          </Button>
-        </Box>
+        <Heading
+          size="2xl"
+          fontWeight={500}
+          color={'logoColor'}
+          lineHeight={0.78}
+          letterSpacing={-0.01}
+        >
+          CONFETTI
+        </Heading>
+        <Text
+          fontSize={'24px'}
+          fontWeight={500}
+          lineHeight={0.9}
+          letterSpacing={-0.01}
+        >
+          MENU
+        </Text>
       </Box>
-
+      <Button
+        onClick={onOpen}
+        pos={'fixed'}
+        right={'54px'}
+        top={'33px'}
+        size={'3xs'}
+        bg={'transparent'}
+      >
+        <svg width="24" height="24">
+          <use href={`${icon}#menu-icon`}></use>
+        </svg>
+      </Button>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
