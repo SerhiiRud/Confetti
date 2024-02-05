@@ -1,14 +1,14 @@
 import { Box } from '@chakra-ui/react';
 export const Hero = () => {
   return (
-    <section id="hero">
-      <Box h={'600px'} pt={'50px'}>
-        Hero
-      </Box>
-      <Box fontFamily={'Inter'} fontSize={18} fontWeight={500}>
-        Jeszcze raz wielkie dzięki! Ciężko nam było foty robić jak ustawili te
-        stoły 🥰 ale sam klimat i dekoracja robiła meegaaa wrażenie! 
-      </Box>
-    </section>
+    <Box
+      as="section"
+      id="hero"
+      h={'690px'}
+      bgImage="url('../images/jpg/Frame.png')"
+      backgroundPosition={'center'}
+      backgroundRepeat="no-repeat"
+      backgroundSize="cover"
+    ></Box>
   );
 };

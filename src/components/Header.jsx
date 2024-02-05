@@ -22,10 +22,14 @@ export const Header = ({ className }) => {
       <Box
         as="header"
         pos={'fixed'}
+        left={0}
         my={'32px'}
+        pl={'20px'}
+        pr={'85px'}
         display={'flex'}
-        gap={'160px'}
+        justifyContent={'space-between'}
         alignItems={'center'}
+        w={'100%'}
         className={className}
       >
         <Heading
@@ -50,7 +54,7 @@ export const Header = ({ className }) => {
         onClick={onOpen}
         pos={'fixed'}
         right={'54px'}
-        top={'33px'}
+        top={'38px'}
         size={'3xs'}
         bg={'transparent'}
       >

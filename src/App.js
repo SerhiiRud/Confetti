@@ -8,6 +8,7 @@ import {
   VStack,
   Code,
   Grid,
+  Center,
 } from '@chakra-ui/react';
 import Fonts from './utils/fonts';
 import theme from './utils/theme';
@@ -39,13 +40,7 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
-      <Container
-        maxW={[360, 768, 1280]}
-        py={'32px'}
-        px={'20px'}
-        border="1px"
-        borderColor="gray.200"
-      >
+      <Container maxW={[480, 768, 1280]} p={0}>
         <Header className={cls} sx={{ className: { cls } }}>
           <BurgerMenu />
         </Header>
