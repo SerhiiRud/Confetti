@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/confetti/static/css/main.2f5c5870.css",
-    "main.js": "/confetti/static/js/main.8c9f184d.js",
+    "main.js": "/confetti/static/js/main.43118f72.js",
+    "static/media/Frame.png": "/confetti/static/media/Frame.951a66e0bc8f36cc5e88.png",
     "static/media/symbol-defs.svg": "/confetti/static/media/symbol-defs.a8f03ba43e42d218aa9a669645b81b25.svg",
     "index.html": "/confetti/index.html",
     "main.2f5c5870.css.map": "/confetti/static/css/main.2f5c5870.css.map",
-    "main.8c9f184d.js.map": "/confetti/static/js/main.8c9f184d.js.map"
+    "main.43118f72.js.map": "/confetti/static/js/main.43118f72.js.map"
   },
   "entrypoints": [
     "static/css/main.2f5c5870.css",
-    "static/js/main.8c9f184d.js"
+    "static/js/main.43118f72.js"
   ]
 }
