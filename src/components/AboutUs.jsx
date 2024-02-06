@@ -1,10 +1,11 @@
-import { Box, Heading } from '@chakra-ui/react';
+import { Box, Heading, Grid, GridItem } from '@chakra-ui/react';
 import { aboutUsData } from '../utils/aboutUsData';
 import Slider from './Slider';
+import { AboutSlide } from './AboutSlide';
 
 export const AboutUs = () => {
   return (
-    <section id="about" h={'600px'}>
+    <Box as="section" id="about" mb={'124px'}>
       <Heading
         mb={'16px'}
         textAlign="center"
@@ -17,6 +18,7 @@ export const AboutUs = () => {
         Kreatywny zespół dekoratorów
       </Heading>
       <Box
+        mb={'36px'}
         textAlign="center"
         fontFamily={'Inter'}
         fontSize={'24px'}
@@ -25,7 +27,30 @@ export const AboutUs = () => {
         Młodzi i energiczni, rozwijający działalność w zakresie tworzenia
         dekoracji na imprezy i wydarzenia
       </Box>
-      <Slider slides={aboutUsData} />
-    </section>
+      <Box display={{ base: 'block', sm: 'none', md: 'none' }}>
+        <Slider section="about" slides={aboutUsData} />
+      </Box>
+      <Grid
+        display={{ base: 'none', sm: 'grid', md: 'grid' }}
+        templateColumns={{
+          base: 'none',
+          sm: 'repeat(1, 1fr)',
+          md: 'repeat(2, 1fr)',
+        }}
+        gap={'24px'}
+      >
+        {aboutUsData.map(item => {
+          return (
+            <GridItem key={item.title}>
+              <AboutSlide
+                title={item.title}
+                content={item.content}
+                background={item.background}
+              />
+            </GridItem>
+          );
+        })}
+      </Grid>
+    </Box>
   );
 };

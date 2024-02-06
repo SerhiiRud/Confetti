@@ -9,6 +9,16 @@
   top: -80px;
   transition: top 0.4s ease-out;
 }
-/* #hero {
-  background-image: url('./images/jpg/Frame.png');
+
+/* Slider dots */
+/* .control-dots {
+  top: 200px;
+}
+
+.dot {
+  background: black;
 } */
+
+.previous {
+  min-width: 50%;
+}

@@ -3,6 +3,7 @@ import {
   Heading,
   Box,
   Button,
+  Container,
   Modal,
   ModalOverlay,
   ModalContent,
@@ -10,6 +11,7 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
+  Portal,
   Text,
 } from '@chakra-ui/react';
 import { BurgerMenu } from './BurgerMenu';
@@ -26,42 +28,49 @@ export const Header = ({ className }) => {
         my={'32px'}
         pl={'20px'}
         pr={'85px'}
-        display={'flex'}
-        justifyContent={'space-between'}
-        alignItems={'center'}
         w={'100%'}
         className={className}
       >
-        <Heading
-          size="2xl"
-          fontWeight={500}
-          color={'logoColor'}
-          lineHeight={0.78}
-          letterSpacing={-0.01}
+        <Container
+          maxW={[480, 768, 1280]}
+          display={'flex'}
+          justifyContent={'space-between'}
+          alignItems={'center'}
         >
-          CONFETTI
-        </Heading>
-        <Text
-          fontSize={'24px'}
-          fontWeight={500}
-          lineHeight={0.9}
-          letterSpacing={-0.01}
-        >
-          MENU
-        </Text>
+          <Heading
+            size="2xl"
+            fontWeight={500}
+            color={'logoColor'}
+            lineHeight={0.78}
+            letterSpacing={-0.01}
+          >
+            CONFETTI
+          </Heading>
+          <Text
+            fontSize={'24px'}
+            fontWeight={500}
+            lineHeight={0.9}
+            letterSpacing={-0.01}
+          >
+            MENU
+          </Text>
+        </Container>
+        <Portal>
+          <Button
+            onClick={onOpen}
+            pos={'fixed'}
+            top={'38px'}
+            right={['54px', '54px', '54px', '54px', '54px']}
+            size={'3xs'}
+            bg={'transparent'}
+          >
+            <svg width="24" height="24">
+              <use href={`${icon}#menu-icon`}></use>
+            </svg>
+          </Button>
+        </Portal>
       </Box>
-      <Button
-        onClick={onOpen}
-        pos={'fixed'}
-        right={'54px'}
-        top={'38px'}
-        size={'3xs'}
-        bg={'transparent'}
-      >
-        <svg width="24" height="24">
-          <use href={`${icon}#menu-icon`}></use>
-        </svg>
-      </Button>
+
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>

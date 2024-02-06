@@ -40,7 +40,13 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
-      <Container maxW={[480, 768, 1280]} p={0}>
+      <Container
+        pos={'relative'}
+        maxW={[480, 768, 1280]}
+        p={0}
+        border="1px"
+        borderColor="gray.200"
+      >
         <Header className={cls} sx={{ className: { cls } }}>
           <BurgerMenu />
         </Header>
