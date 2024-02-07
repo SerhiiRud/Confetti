@@ -5,23 +5,27 @@ import { AboutSlide } from './AboutSlide';
 
 export const AboutUs = () => {
   return (
-    <Box as="section" id="about" mb={'124px'}>
+    <Box as="section" id="about" mb={['124px', '80px']}>
       <Heading
+        maxW={['260px', '520px']}
         mb={'16px'}
+        mx={'auto'}
         textAlign="center"
-        fontSize={'36px'}
+        fontSize={['36px', '48px']}
         fontWeight={500}
-        lineHeight={0.77}
+        lineHeight={[0.77, 0.79]}
         letterSpacing={-0.01}
         color={'rgb(34, 34, 34)'}
       >
         Kreatywny zespół dekoratorów
       </Heading>
       <Box
-        mb={'36px'}
+        maxW={['260px', '520px']}
+        mb={['36px', '48px']}
+        mx={'auto'}
         textAlign="center"
         fontFamily={'Inter'}
-        fontSize={'20px'}
+        fontSize={['20px', '24px']}
         lineHeight={1.4}
         fontWeight={500}
       >

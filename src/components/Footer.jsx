@@ -9,7 +9,7 @@ export const Footer = () => {
       justifyContent={'space-between'}
       alignItems={'center'}
       p={'25px'}
-      borderTop={'1px solid red'}
+      borderTop={'1px solid rgb(237, 75, 94)'}
     >
       <Image src={logo} alt="Confetti" />
       <Text>confetti @ 2023</Text>

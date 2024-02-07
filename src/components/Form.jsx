@@ -11,10 +11,14 @@ export const Form = () => {
   return (
     <Box
       as="form"
-      pb={'51px'}
+      mx={'auto'}
+      w={['360px', '500px']}
+      h={['569px', '634px']}
+      py={['51px', '57px']}
+      px={['16px', '63px']}
       display={'flex'}
       flexDir={'column'}
-      alignItems={'center'}
+      borderRadius={18}
       bg={'rgb(255, 239, 240)'}
     >
       <FormControl isRequired w={'320px'} mb={'24px'}>
@@ -31,8 +35,8 @@ export const Form = () => {
         </FormLabel>
         <Input
           placeholder="Imię"
-          errorBorderColor="red.300"
-          w={'320px'}
+          mx={'auto'}
+          w={['320px', '395px']}
           p={'24px'}
           fontFamily={'Inter'}
           fontSize={'18px'}
@@ -58,7 +62,8 @@ export const Form = () => {
         <Input
           placeholder="mail@gmail.com"
           errorBorderColor="red.300"
-          w={'320px'}
+          mx={'auto'}
+          w={['320px', '395px']}
           p={'24px'}
           fontFamily={'Inter'}
           fontSize={'18px'}
@@ -69,7 +74,7 @@ export const Form = () => {
           bg={'#FFF'}
         ></Input>
       </FormControl>
-      <FormControl w={'320px'} mb={'24px'}>
+      <FormControl w={'320px'} mb={['24px', '32px']}>
         <FormLabel
           ml={'24px'}
           fontFamily={'Inter'}
@@ -83,7 +88,8 @@ export const Form = () => {
         </FormLabel>
         <Textarea
           placeholder="Twoja wiadomość..."
-          w={'320px'}
+          mx={'auto'}
+          w={['320px', '395px']}
           h={'128px'}
           p={'24px'}
           fontFamily={'Inter'}
@@ -97,12 +103,14 @@ export const Form = () => {
       </FormControl>
       <Button
         type="submit"
-        w={'320px'}
-        h={'62px'}
+        mx={'auto'}
+        p={'32px'}
+        w={['320px', '395px']}
+        h={['62px', '80px']}
         fontFamily={'Anzeigen Grotesk T'}
-        fontSize={'28px'}
+        fontSize={['28px', '40px']}
         fontWeight={500}
-        lineHeight={1.27}
+        lineHeight={[1.27, 0.8]}
         letterSpacing={-0.01}
         textTransform={'uppercase'}
         color={'#FFF'}
