@@ -11,23 +11,35 @@ export const ReviewSlide = ({ content, author }) => {
       w={['320px', '346px']}
       h={['229px', '220px']}
       p={'24px'}
-      color={'rgb(34, 34, 34)'}
       bg={'rgb(255, 239, 240)'}
       borderRadius={'24px'}
       fontFamily={'Inter'}
-      fontSize={'18px'}
-      fontWeight={500}
-      lineHeight={1.3}
-      letterSpacing={-0.01}
     >
-      <Text>{content}</Text>
+      <Text
+        textAlign={'left'}
+        fontSize={'18px'}
+        fontWeight={500}
+        lineHeight={1.3}
+        letterSpacing={-0.01}
+        color={'rgb(34, 34, 34)'}
+      >
+        {content}
+      </Text>
       <Box display={'flex'} alignItems={'center'} gap={'8px'}>
         <Box>
           <svg width="32" height="32">
             <use href={`${icon}#icon-user`}></use>
           </svg>
         </Box>
-        <Text>{author}</Text>
+        <Text
+          fontSize={'16px'}
+          fontWeight={500}
+          lineHeight={1.19}
+          letterSpacing={-0.01}
+          color={'rgb(86, 81, 72)'}
+        >
+          {author}
+        </Text>
       </Box>
     </Box>
   );

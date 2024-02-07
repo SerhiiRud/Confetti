@@ -11,13 +11,25 @@ export const AboutSlide = ({ title, content, background }) => {
       bg={background}
       borderRadius={'24px'}
       fontFamily={'Inter'}
-      fontSize={'16px'}
-      fontWeight={500}
-      lineHeight={1.45}
-      letterSpacing={-0.01}
     >
-      <Heading>{title}</Heading>
-      <Text>{content}</Text>
+      <Heading
+        mb={'55px'}
+        textAlign={'left'}
+        fontSize={'24px'}
+        fontWeight={500}
+        lineHeight={1.2}
+        letterSpacing={-0.01}
+      >
+        {title}
+      </Heading>
+      <Text
+        fontSize={'16px'}
+        fontWeight={500}
+        lineHeight={1.45}
+        letterSpacing={-0.01}
+      >
+        {content}
+      </Text>
     </Box>
   );
 };

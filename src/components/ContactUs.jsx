@@ -5,7 +5,7 @@ import { Form } from './Form';
 
 export const ContactUs = () => {
   return (
-    <Box as="section" id="contactus" mb={'36px'}>
+    <Box as="section" id="contactus" mb={'80px'}>
       <Heading
         mb={'36px'}
         textAlign="center"
@@ -28,7 +28,7 @@ export const ContactUs = () => {
         letterSpacing={-0.01}
         color={'rgb(34, 34, 34)'}
       >
-        Confetti - Studio Dekoracij Balonami  Warszawa
+        Confetti - Studio Dekoracij Balonami Warszawa
       </Box>
       <Box
         mb={'16px'}
@@ -41,7 +41,16 @@ export const ContactUs = () => {
         color={'rgb(86, 81, 72)'}
       >
         <CallIcon aria-label="mail" />
-        <Link href="tel:+48 793 351 407">+48 793 351 407</Link>
+        <Link
+          href="tel:+48 793 351 407"
+          fontFamily={'Inter'}
+          fontSize={'20px'}
+          lineHeight={1.2}
+          fontWeight={500}
+          color={'rgb(86, 81, 72)'}
+        >
+          +48 793 351 407
+        </Link>
       </Box>
       <Box
         mb={'36px'}
@@ -54,7 +63,14 @@ export const ContactUs = () => {
         color={'rgb(86, 81, 72)'}
       >
         <MailIcon aria-label="call" />
-        <Link href="mailtol:confettibalony@gmail.com">
+        <Link
+          href="mailtol:confettibalony@gmail.com"
+          fontFamily={'Inter'}
+          fontSize={'20px'}
+          lineHeight={1.2}
+          fontWeight={500}
+          color={'rgb(86, 81, 72)'}
+        >
           confettibalony@gmail.com
         </Link>
       </Box>

@@ -11,6 +11,7 @@ export const Form = () => {
   return (
     <Box
       as="form"
+      pb={'51px'}
       display={'flex'}
       flexDir={'column'}
       alignItems={'center'}
@@ -103,10 +104,11 @@ export const Form = () => {
         fontWeight={500}
         lineHeight={1.27}
         letterSpacing={-0.01}
+        textTransform={'uppercase'}
         color={'#FFF'}
         bg={'rgb(237, 75, 94)'}
       >
-        WYŚLIJ
+        Wyślij
       </Button>
     </Box>
   );

@@ -9,9 +9,9 @@ export const AboutUs = () => {
       <Heading
         mb={'16px'}
         textAlign="center"
-        fontSize={'48px'}
+        fontSize={'36px'}
         fontWeight={500}
-        lineHeight={0.79}
+        lineHeight={0.77}
         letterSpacing={-0.01}
         color={'rgb(34, 34, 34)'}
       >
@@ -21,7 +21,8 @@ export const AboutUs = () => {
         mb={'36px'}
         textAlign="center"
         fontFamily={'Inter'}
-        fontSize={'24px'}
+        fontSize={'20px'}
+        lineHeight={1.4}
         fontWeight={500}
       >
         Młodzi i energiczni, rozwijający działalność w zakresie tworzenia
