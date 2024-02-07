@@ -1,20 +1,21 @@
 import { useDisclosure } from '@chakra-ui/react';
 import {
-  Heading,
   Box,
   Button,
   Container,
+  Image,
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
-  ModalFooter,
   ModalBody,
   ModalCloseButton,
   Portal,
   Text,
 } from '@chakra-ui/react';
 import { BurgerMenu } from './BurgerMenu';
+import { ReactComponent as MenuIcon } from '../images/svg/burger-menu.svg';
+import { ReactComponent as CloseIcon } from '../images/svg/close-menu.svg';
+import logo from '../images/jpg/logo.png';
 import icon from '../images/svg/symbol-defs.svg';
 
 export const Header = ({ className }) => {
@@ -27,7 +28,7 @@ export const Header = ({ className }) => {
         left={0}
         my={'32px'}
         pl={'20px'}
-        pr={'85px'}
+        pr={['42px', '85px']}
         w={'100%'}
         className={className}
       >
@@ -37,15 +38,8 @@ export const Header = ({ className }) => {
           justifyContent={'space-between'}
           alignItems={'center'}
         >
-          <Heading
-            size="2xl"
-            fontWeight={500}
-            color={'logoColor'}
-            lineHeight={0.78}
-            letterSpacing={-0.01}
-          >
-            CONFETTI
-          </Heading>
+          <Image src={logo} alt="Confetti" ml={[0, 0, '30px']} />
+
           <Text
             fontSize={'24px'}
             fontWeight={500}
@@ -59,8 +53,8 @@ export const Header = ({ className }) => {
           <Button
             onClick={onOpen}
             pos={'fixed'}
-            top={'38px'}
-            right={['54px', '54px', '54px', '54px', '54px']}
+            top={'36px'}
+            right={['28px', '68px', '68px', '68px', '68px']}
             size={'3xs'}
             bg={'transparent'}
           >
@@ -73,18 +67,13 @@ export const Header = ({ className }) => {
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent>
-          <ModalHeader>Modal Title</ModalHeader>
-          <ModalCloseButton />
+        <ModalContent w={'360px'} h={'500px'} py={'30px'} px={'20px'}>
+          <ModalCloseButton onClick={onClose} mt={'20px'} mr={'10px'}>
+            <CloseIcon />
+          </ModalCloseButton>
           <ModalBody>
             <BurgerMenu onClose={onClose} />
           </ModalBody>
-
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onClose}>
-              Close
-            </Button>
-          </ModalFooter>
         </ModalContent>
       </Modal>
     </>

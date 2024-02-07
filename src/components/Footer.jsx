@@ -1,19 +1,4 @@
-import {
-  Heading,
-  Box,
-  Button,
-  Container,
-  Image,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-  Portal,
-  Text,
-} from '@chakra-ui/react';
+import { Box, Image, Text } from '@chakra-ui/react';
 import logo from '../images/jpg/logo.png';
 
 export const Footer = () => {

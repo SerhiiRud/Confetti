@@ -3,16 +3,18 @@ import { Link as SmoothLink } from 'react-scroll';
 
 export const MenuItem = ({ anchor, content, onClose }) => {
   return (
-    <ListItem>
+    <ListItem mt={'24px'}>
       <ChakraLink
         as={SmoothLink}
         to={anchor}
         smooth={true}
         offset={-70}
         duration={1000}
-        color={'red'}
-        fontSize={24}
+        color={'rgb(34, 34, 34)'}
+        fontSize={'24px'}
         fontWeight={500}
+        lineHeight={0.79}
+        letterSpacing={-0.01}
         onClick={onClose}
       >
         {content}
