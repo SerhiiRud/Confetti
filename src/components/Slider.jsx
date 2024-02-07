@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Box, Button } from '@chakra-ui/react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import icon from '../images/svg/symbol-defs.svg';
 import { AboutSlide } from './AboutSlide';
 import { ReviewSlide } from './ReviewSlide';
 
@@ -55,6 +56,7 @@ const Slider = ({ section, slides }) => {
             showThumbs={false}
             autoFocus={true}
             showStatus={false}
+            showIndicators={false}
             centerMode={true}
             centerSlidePercentage={-0.087 * window.innerWidth + 117}
             selectedItem={currentIndex}
@@ -67,14 +69,33 @@ const Slider = ({ section, slides }) => {
               />
             ))}
           </Carousel>
-          <Button
-            onClick={() =>
-              setSlide((currentIndex - 1 + slides.length) % slides.length)
-            }
-          />
-          <Button
-            onClick={() => setSlide((currentIndex + 1) % slides.length)}
-          />
+          <Box
+            display={'flex'}
+            gap={'24px'}
+            justifyContent={'center'}
+            mt={'48px'}
+          >
+            <Button
+              p={0}
+              borderRadius={50}
+              onClick={() =>
+                setSlide((currentIndex - 1 + slides.length) % slides.length)
+              }
+            >
+              <svg width="56" height="56">
+                <use href={`${icon}#icon-left`}></use>
+              </svg>
+            </Button>
+            <Button
+              p={0}
+              borderRadius={50}
+              onClick={() => setSlide((currentIndex + 1) % slides.length)}
+            >
+              <svg width="56" height="56">
+                <use href={`${icon}#icon-right`}></use>
+              </svg>
+            </Button>
+          </Box>
         </>
       );
     default:

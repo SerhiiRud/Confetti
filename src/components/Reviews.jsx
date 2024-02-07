@@ -1,6 +1,7 @@
-import { Box, Heading } from '@chakra-ui/react';
+import { Box, Heading, Grid, GridItem } from '@chakra-ui/react';
 import { reviewsData } from '../utils/reviewsData';
 import Slider from './Slider';
+import { ReviewSlide } from './ReviewSlide';
 
 export const Reviews = () => {
   return (
@@ -21,6 +22,21 @@ export const Reviews = () => {
       <Box display={{ base: 'none', sm: 'block', md: 'none' }}>
         <Slider section="reviews-tab" slides={reviewsData} />
       </Box>
+      <Grid
+        display={{ base: 'none', sm: 'none', md: 'grid' }}
+        templateColumns={{
+          md: 'repeat(3, 1fr)',
+        }}
+        gap={'26px'}
+      >
+        {reviewsData.map(item => {
+          return (
+            <GridItem key={item.author}>
+              <ReviewSlide content={item.content} author={item.author} />
+            </GridItem>
+          );
+        })}
+      </Grid>
     </Box>
   );
 };

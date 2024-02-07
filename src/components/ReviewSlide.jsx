@@ -1,8 +1,12 @@
 import { Box, Text } from '@chakra-ui/react';
+import icon from '../images/svg/symbol-defs.svg';
 
 export const ReviewSlide = ({ content, author }) => {
   return (
     <Box
+      display={'flex'}
+      flexDirection={'column'}
+      justifyContent={'space-between'}
       mx={['auto', '20px']}
       w={['320px', '346px']}
       h={['229px', '220px']}
@@ -17,7 +21,14 @@ export const ReviewSlide = ({ content, author }) => {
       letterSpacing={-0.01}
     >
       <Text>{content}</Text>
-      <Text>{author}</Text>
+      <Box display={'flex'} alignItems={'center'} gap={'8px'}>
+        <Box>
+          <svg width="32" height="32">
+            <use href={`${icon}#icon-user`}></use>
+          </svg>
+        </Box>
+        <Text>{author}</Text>
+      </Box>
     </Box>
   );
 };
