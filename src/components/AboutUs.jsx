@@ -5,13 +5,13 @@ import { AboutSlide } from './AboutSlide';
 
 export const AboutUs = () => {
   return (
-    <Box as="section" id="about" mb={['124px', '80px']}>
+    <Box as="section" id="about" mb={['124px', '80px', '100px']}>
       <Heading
         maxW={['260px', '520px']}
-        mb={'16px'}
+        mb={['16px', '16px', '24px']}
         mx={'auto'}
         textAlign="center"
-        fontSize={['36px', '48px']}
+        fontSize={['36px', '48px', '56px']}
         fontWeight={500}
         lineHeight={[0.77, 0.79]}
         letterSpacing={-0.01}
@@ -21,12 +21,12 @@ export const AboutUs = () => {
       </Heading>
       <Box
         maxW={['260px', '520px']}
-        mb={['36px', '48px']}
+        mb={['36px', '48px', '64px']}
         mx={'auto'}
         textAlign="center"
         fontFamily={'Inter'}
         fontSize={['20px', '24px']}
-        lineHeight={1.4}
+        lineHeight={[1.4, 1.4, 1.2]}
         fontWeight={500}
       >
         Młodzi i energiczni, rozwijający działalność w zakresie tworzenia

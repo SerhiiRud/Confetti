@@ -15,7 +15,6 @@ const fonts = {
 
 const colors = {
   logoColor: 'rgb(237, 75, 94)',
-  test: '#f7fafc',
 };
 
 const breakpoints = {

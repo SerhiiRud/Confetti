@@ -5,13 +5,18 @@ import { ReviewSlide } from './ReviewSlide';
 
 export const Reviews = () => {
   return (
-    <Box as="section" id="reviews" mb={['124px', '80px']} fontFamily={'Inter'}>
+    <Box
+      as="section"
+      id="reviews"
+      mb={['124px', '80px', '100px']}
+      fontFamily={'Inter'}
+    >
       <Heading
-        mb={['36px', '48px']}
+        mb={['36px', '48px', '100px']}
         textAlign="center"
-        fontSize={['36px', '48px']}
+        fontSize={['36px', '48px', '64px']}
         fontWeight={500}
-        lineHeight={1.1}
+        lineHeight={[1.1, 1.1, 0.79]}
         letterSpacing={-0.01}
         color={'rgb(237, 75, 94)'}
       >

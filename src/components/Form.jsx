@@ -12,10 +12,10 @@ export const Form = () => {
     <Box
       as="form"
       mx={'auto'}
-      w={['360px', '500px']}
-      h={['569px', '634px']}
+      w={['360px', '500px', '608px']}
+      h={['569px', '634px', '608px']}
       py={['51px', '57px']}
-      px={['16px', '63px']}
+      px={['16px', '63px', '82px']}
       display={'flex'}
       flexDir={'column'}
       borderRadius={18}
@@ -36,10 +36,10 @@ export const Form = () => {
         <Input
           placeholder="Imię"
           mx={'auto'}
-          w={['320px', '395px']}
+          w={['320px', '395px', '443px']}
           p={'24px'}
           fontFamily={'Inter'}
-          fontSize={'18px'}
+          fontSize={['18px', '20px', '20px']}
           fontWeight={500}
           lineHeight={1.2}
           letterSpacing={-0.01}
@@ -63,10 +63,10 @@ export const Form = () => {
           placeholder="mail@gmail.com"
           errorBorderColor="red.300"
           mx={'auto'}
-          w={['320px', '395px']}
+          w={['320px', '395px', '443px']}
           p={'24px'}
           fontFamily={'Inter'}
-          fontSize={'18px'}
+          fontSize={['18px', '20px', '20px']}
           fontWeight={500}
           lineHeight={1.2}
           letterSpacing={-0.01}
@@ -89,11 +89,11 @@ export const Form = () => {
         <Textarea
           placeholder="Twoja wiadomość..."
           mx={'auto'}
-          w={['320px', '395px']}
-          h={'128px'}
+          w={['320px', '395px', '443px']}
+          h={['128px', '136px', '136px']}
           p={'24px'}
           fontFamily={'Inter'}
-          fontSize={'18px'}
+          fontSize={['18px', '20px', '20px']}
           fontWeight={500}
           lineHeight={1.2}
           letterSpacing={-0.01}
@@ -105,7 +105,7 @@ export const Form = () => {
         type="submit"
         mx={'auto'}
         p={'32px'}
-        w={['320px', '395px']}
+        w={['320px', '395px', '443px']}
         h={['62px', '80px']}
         fontFamily={'Anzeigen Grotesk T'}
         fontSize={['28px', '40px']}

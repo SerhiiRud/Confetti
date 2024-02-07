@@ -65,9 +65,14 @@ export const Header = ({ className }) => {
         </Portal>
       </Box>
 
-      <Modal isOpen={isOpen} onClose={onClose}>
+      <Modal isOpen={isOpen} onClose={onClose} w={'100%'}>
         <ModalOverlay />
-        <ModalContent w={'360px'} h={'500px'} py={'30px'} px={'20px'}>
+        <ModalContent
+          w={['360px', '768px', '1440px']}
+          h={['500px', '500px', '600px']}
+          py={['30px', '32px', '37px']}
+          px={['20px', '30px', '112px']}
+        >
           <ModalCloseButton onClick={onClose} mt={'20px'} mr={'10px'}>
             <CloseIcon />
           </ModalCloseButton>

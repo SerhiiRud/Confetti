@@ -26,7 +26,7 @@ export const Hero = () => {
     <Box
       as="section"
       id="hero"
-      h={['524px', '778px']}
+      h={['524px', '778px', '992px']}
       pt={'212px'}
       backgroundImage={[
         `url(${backgroundMob})`,
@@ -53,10 +53,10 @@ export const Hero = () => {
     >
       <Heading
         mx={'auto'}
-        w={['320px', '484px']}
-        fontSize={['40px', '64px']}
+        w={['320px', '484px', '771px']}
+        fontSize={['40px', '64px', '88px']}
         fontWeight={500}
-        lineHeight={[0.8, 1.25]}
+        lineHeight={[0.8, 1.25, 0.9]}
         letterSpacing={-0.01}
         textAlign={'center'}
         color={'rgb(237, 75, 94)'}

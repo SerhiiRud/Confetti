@@ -7,9 +7,9 @@ export const ReviewSlide = ({ content, author }) => {
       display={'flex'}
       flexDirection={'column'}
       justifyContent={'space-between'}
-      mx={['auto', '20px']}
-      w={['320px', '346px']}
-      h={['229px', '220px']}
+      mx={['auto', '20px', 'auto']}
+      w={['320px', '346px', '388px']}
+      h={['229px', '220px', '277px']}
       p={'24px'}
       bg={'rgb(255, 239, 240)'}
       borderRadius={'24px'}
@@ -17,9 +17,9 @@ export const ReviewSlide = ({ content, author }) => {
     >
       <Text
         textAlign={'left'}
-        fontSize={'18px'}
+        fontSize={['18px', '18px', '24px']}
         fontWeight={500}
-        lineHeight={1.3}
+        lineHeight={[1.3, 1.3, 1.2]}
         letterSpacing={-0.01}
         color={'rgb(34, 34, 34)'}
       >

@@ -5,7 +5,7 @@ export const AboutSlide = ({ title, content, background }) => {
     <Box
       mx={'auto'}
       w={['320px', '596px']}
-      h={['253px', '287px']}
+      h={['253px', '287px', '293px']}
       p={['24px', '48px']}
       color={'#FFF'}
       bg={background}
@@ -17,7 +17,7 @@ export const AboutSlide = ({ title, content, background }) => {
         textAlign={'left'}
         fontSize={['24px', '40px']}
         fontWeight={500}
-        lineHeight={[1.2, 0.8]}
+        lineHeight={[1.2, 0.8, 0.95]}
         letterSpacing={-0.01}
       >
         {title}
@@ -25,7 +25,7 @@ export const AboutSlide = ({ title, content, background }) => {
       <Text
         fontSize={['16px', '20px']}
         fontWeight={500}
-        lineHeight={1.45}
+        lineHeight={[1.45, 1.45, 1.35]}
         letterSpacing={-0.01}
       >
         {content}
