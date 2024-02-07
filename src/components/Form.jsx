@@ -30,6 +30,7 @@ export const Form = () => {
         </FormLabel>
         <Input
           placeholder="Imię"
+          errorBorderColor="red.300"
           w={'320px'}
           p={'24px'}
           fontFamily={'Inter'}
@@ -55,6 +56,7 @@ export const Form = () => {
         </FormLabel>
         <Input
           placeholder="mail@gmail.com"
+          errorBorderColor="red.300"
           w={'320px'}
           p={'24px'}
           fontFamily={'Inter'}
@@ -66,7 +68,7 @@ export const Form = () => {
           bg={'#FFF'}
         ></Input>
       </FormControl>
-      <FormControl w={'320px'}>
+      <FormControl w={'320px'} mb={'24px'}>
         <FormLabel
           ml={'24px'}
           fontFamily={'Inter'}
@@ -92,7 +94,18 @@ export const Form = () => {
           bg={'#FFF'}
         ></Textarea>
       </FormControl>
-      <Button w={'320px'} h={'62px'} color={'rgb(136, 136, 136)'} bg={'#FFF'}>
+      <Button
+        type="submit"
+        w={'320px'}
+        h={'62px'}
+        fontFamily={'Anzeigen Grotesk T'}
+        fontSize={'28px'}
+        fontWeight={500}
+        lineHeight={1.27}
+        letterSpacing={-0.01}
+        color={'#FFF'}
+        bg={'rgb(237, 75, 94)'}
+      >
         WYŚLIJ
       </Button>
     </Box>

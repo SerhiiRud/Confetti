@@ -1,3 +1,33 @@
+import {
+  Heading,
+  Box,
+  Button,
+  Container,
+  Image,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  Portal,
+  Text,
+} from '@chakra-ui/react';
+import logo from '../images/jpg/logo.png';
+
 export const Footer = () => {
-  return <footer>Footer</footer>;
+  return (
+    <Box
+      as="footer"
+      display={'flex'}
+      justifyContent={'space-between'}
+      alignItems={'center'}
+      p={'25px'}
+      borderTop={'1px solid red'}
+    >
+      <Image src={logo} alt="Confetti" />
+      <Text>confetti @ 2023</Text>
+    </Box>
+  );
 };
