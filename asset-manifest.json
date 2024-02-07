@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/confetti/static/css/main.2f5c5870.css",
-    "main.js": "/confetti/static/js/main.43118f72.js",
-    "static/media/Frame.png": "/confetti/static/media/Frame.951a66e0bc8f36cc5e88.png",
-    "static/media/symbol-defs.svg": "/confetti/static/media/symbol-defs.a8f03ba43e42d218aa9a669645b81b25.svg",
+    "main.css": "/confetti/static/css/main.25f66903.css",
+    "main.js": "/confetti/static/js/main.ef161bcc.js",
+    "static/media/HeroDesktopBalloons.png": "/confetti/static/media/HeroDesktopBalloons.1bbde3cfe414d748bebf.png",
+    "static/media/HeroDesktopBG.png": "/confetti/static/media/HeroDesktopBG.efa187aed0c99f7da2ae.png",
+    "static/media/HeroTabletBG.png": "/confetti/static/media/HeroTabletBG.eaf234ec805566c1ec6b.png",
+    "static/media/HeroMobileBG.png": "/confetti/static/media/HeroMobileBG.8e599d74fd7d967dde03.png",
+    "static/media/symbol-defs.svg": "/confetti/static/media/symbol-defs.f6648ecc74edbc2a55311eb47630888e.svg",
+    "static/media/call.svg": "/confetti/static/media/call.07c7480f856c2be7967cd68992c8331a.svg",
+    "static/media/burger-menu.svg": "/confetti/static/media/burger-menu.a42e66d6190a01a6fa650dd8c369bea7.svg",
+    "static/media/close-menu.svg": "/confetti/static/media/close-menu.9f63f4321e511b348484e7e029bf828c.svg",
     "index.html": "/confetti/index.html",
-    "main.2f5c5870.css.map": "/confetti/static/css/main.2f5c5870.css.map",
-    "main.43118f72.js.map": "/confetti/static/js/main.43118f72.js.map"
+    "static/media/sms.svg": "/confetti/static/media/sms.d88eb8dd83514f5b9d716fdd3c967894.svg",
+    "main.25f66903.css.map": "/confetti/static/css/main.25f66903.css.map",
+    "main.ef161bcc.js.map": "/confetti/static/js/main.ef161bcc.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f5c5870.css",
-    "static/js/main.43118f72.js"
+    "static/css/main.25f66903.css",
+    "static/js/main.ef161bcc.js"
   ]
 }
