@@ -1,5 +1,10 @@
 import { extendTheme } from '@chakra-ui/react';
 
+const config = {
+  initialColorMode: 'light',
+  useSystemColorMode: false,
+};
+
 const styles = {
   global: {
     'h1, h2, h3. h4, h5, h6': {
@@ -19,7 +24,7 @@ const colors = {
 
 const breakpoints = {
   base: null, // 0px
-  sm: '30em', // ~480px. em is a relative unit and is dependant on the font-size.
+  sm: '30em', // ~480px
   md: '48em', // ~768px
   // lg: null, // ~992px
   xl: '80em', // ~1280px
@@ -27,6 +32,7 @@ const breakpoints = {
 };
 
 const theme = extendTheme({
+  config,
   styles,
   fonts,
   colors,
