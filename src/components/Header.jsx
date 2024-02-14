@@ -4,6 +4,7 @@ import {
   Button,
   Container,
   Image,
+  Link as ChakraLink,
   Modal,
   ModalOverlay,
   ModalContent,
@@ -38,13 +39,16 @@ export const Header = ({ className }) => {
           justifyContent={'space-between'}
           alignItems={'center'}
         >
-          <Image src={logo} alt="Confetti" ml={[0, 0, '30px']} />
-
+          <a href="./" aria-label="Link to home page">
+            <Image src={logo} alt="Confetti" ml={[0, 0, '30px']} />
+          </a>
           <Text
             fontSize={'24px'}
             fontWeight={500}
             lineHeight={0.9}
             letterSpacing={-0.01}
+            _hover={{ color: 'rgb(237, 75, 94)' }}
+            _focus={{ color: 'rgb(237, 75, 94)' }}
           >
             MENU
           </Text>
@@ -57,6 +61,8 @@ export const Header = ({ className }) => {
             right={['28px', '68px', '68px', '68px', '68px']}
             size={'3xs'}
             bg={'transparent'}
+            _hover={{ fill: 'rgb(237, 75, 94)' }}
+            _focus={{ fill: 'rgb(237, 75, 94)' }}
           >
             <svg width="24" height="24">
               <use href={`${icon}#menu-icon`}></use>
